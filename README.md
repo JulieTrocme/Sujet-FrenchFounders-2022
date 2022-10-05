@@ -9,6 +9,7 @@ Développer une API REST :
 
 
 //Pour Docker
+
 docker-compose up -d                //pour lancer la base docker
 
 symfony var:export --multiline      //pour récuperer le database_URL, le copier dans .env.local pour que ça soit plus rapide
