@@ -10,17 +10,17 @@ Développer une API REST :
 
 //Pour Docker
 
-docker-compose up -d                //pour lancer la base docker
+"docker-compose up -d"                //pour lancer la base docker
 
-symfony var:export --multiline      //pour récuperer le database_URL, le copier dans .env.local pour que ça soit plus rapide
+"symfony var:export --multiline"      //pour récuperer le database_URL, le copier dans .env.local pour que ça soit plus rapide
 
 //Faire pour doctrine
-php bin/console doctrine:database:create 			
-php bin/console                                       
-php bin/console doctrine:migrations:migrate
+"php bin/console doctrine:database:create" 			
+"php bin/console"                                       
+"php bin/console doctrine:migrations:migrate"
 
 
-php ./bin/console messenger:consume  //pour que les mails et les notifs s'envoie et ne reste pas stocké
+"php ./bin/console messenger:consume"  //pour que les mails et les notifs s'envoie et ne reste pas stocké
 
 - Que faudrait-il changer/optimiser sur cette api/infra pour encaisser +500 appels/seconde ?
 
